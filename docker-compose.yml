@@ -1,0 +1,9 @@
+
+services:
+  server:
+    ports:
+      - "10024:10024"
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
